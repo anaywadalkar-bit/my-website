@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Portfolio</title>
+
+    <style>
+        body {
+            background: #111;
+            color: white;
+            font-family: Arial;
+            text-align: center;
+        }
+
+        .card {
+            background: #222;
+            padding: 20px;
+            margin: 50px auto;
+            width: 300px;
+            border-radius: 10px;
+        }
+
+        img {
+            width: 120px;
+            border-radius: 50%;
+        }
+
+        button {
+            padding: 10px;
+            margin-top: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <img src="myphoto.png">
+
+    <h2 id="name">Anay</h2>
+    <p>Tech + Repairing 🔧💻</p>
+
+    <button onclick="openWhatsApp()">Contact Me</button>
+</div>
+
+<script>
+function changeName() {
+    document.getElementById("name").innerText = "Future Developer 🔥";
+}
+</script>
+<script>
+function openWhatsApp() {
+    window.open("https://wa.me/9423079160");
+}
+</script>
+</body>
+</html>
