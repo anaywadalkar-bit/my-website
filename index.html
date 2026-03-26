@@ -2,57 +2,61 @@
 <html>
 <head>
     <title>My Portfolio</title>
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        body {
-            background: #111;
-            color: white;
-            font-family: Arial;
-            text-align: center;
-        }
+        .navbar {
+    background: #000;
+    padding: 10px;
+}
+html {
+    scroll-behavior: smooth;
+}
+.navbar a {
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
 
-        .card {
-            background: #222;
-            padding: 20px;
-            margin: 50px auto;
-            width: 300px;
-            border-radius: 10px;
-        }
-
-        img {
-            width: 120px;
-            border-radius: 50%;
-        }
-
-        button {
-            padding: 10px;
-            margin-top: 10px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
+.navbar a:hover {
+    color: cyan;
+}
     </style>
 </head>
-<body>
 
+<body>
+<div class="navbar">
+    <a href="#">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+</div>
 <div class="card">
     <img src="myphoto.png">
-
-    <h2 id="name">Anay</h2>
+    <h2>Anay</h2>
     <p>Tech + Repairing 🔧💻</p>
+</div>
 
-    <button onclick="openWhatsApp()">Contact Me</button>
+<div class="card" id="about">
+    <h3>About Me</h3>
+    <p>I am learning coding and I like working with gadgets.</p>
+</div>
+
+<div class="card" id="skills">
+    <h3>Skills</h3>
+    <p>HTML, Basic CSS, JavaScript</p>
+</div>
+
+<div class="card" id="contact">
+    <h3>Contact</h3>
+    <button onclick="openWhatsApp()">Message Me</button>
 </div>
 
 <script>
-function changeName() {
-    document.getElementById("name").innerText = "Future Developer 🔥";
-}
-</script>
-<script>
 function openWhatsApp() {
-    window.open("https://wa.me/9423079160");
+    window.open("https://wa.me/919876543210");
 }
 </script>
+
 </body>
 </html>
